@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Amazing Tips</string>
+    <string name="ok_15_percent">OK (15%)</string>
+    <string name="good_18_percent">Good (18%)</string>
+    <string name="amazing_20_percent">Amazing (20%)</string>
+    <string name="btn_calculate">Calculate</string>
+    <string name="txtv_hint">Cost of Service</string>
+    <string name="txv_question">How was the service?</string>
+    <string name="txtv_total_amount">Total Amount: %s</string>
+    <string name="type">Round up Tip?</string>
+</resources>
