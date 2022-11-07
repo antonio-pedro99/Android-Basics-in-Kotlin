@@ -18,6 +18,7 @@ package com.example.android.dessertclicker
 
 import android.content.ActivityNotFoundException
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
@@ -26,6 +27,9 @@ import androidx.core.app.ShareCompat
 import androidx.databinding.DataBindingUtil
 import com.example.android.dessertclicker.databinding.ActivityMainBinding
 
+const val TAG = "MainActivity"
+const val KEY_REVENUE = "revenue_key"
+const val KEY_DESSERT_SOLD = "dessert_sold_key"
 class MainActivity : AppCompatActivity() {
 
     private var revenue = 0
@@ -64,6 +68,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         // Use Data Binding to get reference to the views
+
+        Log.d("MainActivity", "onCreate Called")
+
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
         binding.dessertButton.setOnClickListener {
@@ -78,6 +85,40 @@ class MainActivity : AppCompatActivity() {
         binding.dessertButton.setImageResource(currentDessert.imageId)
     }
 
+    override fun onStart() {
+        super.onStart()
+        Log.d(TAG, "onStart created")
+    }
+    override fun onResume() {
+        super.onResume()
+        Log.d(TAG, "onResume Called")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d(TAG, "onPause Called")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d(TAG, "onStop Called")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d(TAG, "onDestroy Called")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Log.d(TAG, "onRestart Called")
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        Log.d(TAG, "onSavedInstanceState called")
+        outState.putInt(KEY_REVENUE, revenue)
+    }
     /**
      * Updates the score when the dessert is clicked. Possibly shows a new dessert.
      */
