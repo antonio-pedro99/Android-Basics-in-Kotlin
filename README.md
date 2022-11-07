@@ -21,7 +21,7 @@ This is also serving as a preparation towards the Android Associate Certificatio
 
 ### Unit 3: Navigation
 
--   Navigate between screens
+-   ~~Navigate between screens~~
 -   Introduction to the Navigation component
 -   Architeture component
 -   Adaptive Layouts
