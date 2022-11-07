@@ -18,6 +18,7 @@ package com.example.android.dessertclicker
 
 import android.content.ActivityNotFoundException
 import android.os.Bundle
+import android.provider.Contacts.SettingsColumns.KEY
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
@@ -70,7 +71,11 @@ class MainActivity : AppCompatActivity() {
         // Use Data Binding to get reference to the views
 
         Log.d("MainActivity", "onCreate Called")
+        if (savedInstanceState != null) {
+            revenue = savedInstanceState.getInt(KEY_REVENUE, 0)
+            dessertsSold = savedInstanceState.getInt(KEY_DESSERT_SOLD, 0)
 
+        }
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
         binding.dessertButton.setOnClickListener {
@@ -118,6 +123,7 @@ class MainActivity : AppCompatActivity() {
         super.onSaveInstanceState(outState)
         Log.d(TAG, "onSavedInstanceState called")
         outState.putInt(KEY_REVENUE, revenue)
+        outState.putInt(KEY_DESSERT_SOLD, dessertsSold)
     }
     /**
      * Updates the score when the dessert is clicked. Possibly shows a new dessert.
