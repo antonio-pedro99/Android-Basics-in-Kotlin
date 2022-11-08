@@ -1,0 +1,76 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  ~ Copyright 2020, The Android Open Source Project
+4  ~
+5  ~ Licensed under the Apache License, Version 2.0 (the "License");
+6  ~ you may not use this file except in compliance with the License.
+7  ~ You may obtain a copy of the License at
+8  ~
+9  ~      http://www.apache.org/licenses/LICENSE-2.0
+10  ~
+11  ~ Unless required by applicable law or agreed to in writing, software
+12  ~ distributed under the License is distributed on an "AS IS" BASIS,
+13  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+14  ~ See the License for the specific language governing permissions and
+15  ~ limitations under the License.
+16-->
+17<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+18    package="com.example.android.dessertclicker"
+19    android:versionCode="1"
+20    android:versionName="1.0" >
+21
+22    <uses-sdk
+23        android:minSdkVersion="19"
+23-->/home/antdev/AndroidStudioProjects/Android Basics in Kotlin/dessert-app/app/src/main/AndroidManifest.xml
+24        android:targetSdkVersion="31" />
+24-->/home/antdev/AndroidStudioProjects/Android Basics in Kotlin/dessert-app/app/src/main/AndroidManifest.xml
+25
+26    <application
+26-->/home/antdev/AndroidStudioProjects/Android Basics in Kotlin/dessert-app/app/src/main/AndroidManifest.xml:20:5-35:19
+27        android:allowBackup="true"
+27-->/home/antdev/AndroidStudioProjects/Android Basics in Kotlin/dessert-app/app/src/main/AndroidManifest.xml:21:9-35
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.5.0] /home/antdev/.gradle/caches/transforms-3/809ddce9e66ca99403b9a3e2d0b9af39/transformed/core-1.5.0/AndroidManifest.xml:24:18-86
+29        android:debuggable="true"
+30        android:icon="@mipmap/ic_dessert_clicker"
+30-->/home/antdev/AndroidStudioProjects/Android Basics in Kotlin/dessert-app/app/src/main/AndroidManifest.xml:22:9-50
+31        android:label="@string/app_name"
+31-->/home/antdev/AndroidStudioProjects/Android Basics in Kotlin/dessert-app/app/src/main/AndroidManifest.xml:23:9-41
+32        android:roundIcon="@mipmap/ic_dessert_clicker_round"
+32-->/home/antdev/AndroidStudioProjects/Android Basics in Kotlin/dessert-app/app/src/main/AndroidManifest.xml:24:9-61
+33        android:supportsRtl="true"
+33-->/home/antdev/AndroidStudioProjects/Android Basics in Kotlin/dessert-app/app/src/main/AndroidManifest.xml:25:9-35
+34        android:testOnly="true"
+35        android:theme="@style/AppTheme" >
+35-->/home/antdev/AndroidStudioProjects/Android Basics in Kotlin/dessert-app/app/src/main/AndroidManifest.xml:26:9-40
+36        <activity
+36-->/home/antdev/AndroidStudioProjects/Android Basics in Kotlin/dessert-app/app/src/main/AndroidManifest.xml:27:9-34:20
+37            android:name="com.example.android.dessertclicker.MainActivity"
+37-->/home/antdev/AndroidStudioProjects/Android Basics in Kotlin/dessert-app/app/src/main/AndroidManifest.xml:27:19-81
+38            android:exported="true" >
+38-->/home/antdev/AndroidStudioProjects/Android Basics in Kotlin/dessert-app/app/src/main/AndroidManifest.xml:28:13-36
+39            <intent-filter>
+39-->/home/antdev/AndroidStudioProjects/Android Basics in Kotlin/dessert-app/app/src/main/AndroidManifest.xml:29:13-33:29
+40                <action android:name="android.intent.action.MAIN" />
+40-->/home/antdev/AndroidStudioProjects/Android Basics in Kotlin/dessert-app/app/src/main/AndroidManifest.xml:30:17-69
+40-->/home/antdev/AndroidStudioProjects/Android Basics in Kotlin/dessert-app/app/src/main/AndroidManifest.xml:30:25-66
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->/home/antdev/AndroidStudioProjects/Android Basics in Kotlin/dessert-app/app/src/main/AndroidManifest.xml:32:17-77
+42-->/home/antdev/AndroidStudioProjects/Android Basics in Kotlin/dessert-app/app/src/main/AndroidManifest.xml:32:27-74
+43            </intent-filter>
+44        </activity>
+45
+46        <provider
+46-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/antdev/.gradle/caches/transforms-3/d021bec982e8e10b97ccac4f686ff33c/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+47            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+47-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/antdev/.gradle/caches/transforms-3/d021bec982e8e10b97ccac4f686ff33c/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+48            android:authorities="com.example.android.dessertclicker.lifecycle-process"
+48-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/antdev/.gradle/caches/transforms-3/d021bec982e8e10b97ccac4f686ff33c/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+49            android:exported="false"
+49-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/antdev/.gradle/caches/transforms-3/d021bec982e8e10b97ccac4f686ff33c/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+50            android:multiprocess="true" />
+50-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/antdev/.gradle/caches/transforms-3/d021bec982e8e10b97ccac4f686ff33c/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+51    </application>
+52
+53</manifest>

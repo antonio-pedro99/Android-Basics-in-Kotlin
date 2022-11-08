@@ -1,0 +1,4 @@
+#Mon Nov 07 09:00:29 IST 2022
+base.0=/home/antdev/AndroidStudioProjects/Android Basics in Kotlin/dessert-app/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

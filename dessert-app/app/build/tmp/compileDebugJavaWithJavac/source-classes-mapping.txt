@@ -1,0 +1,20 @@
+com/example/android/dessertclicker/DataBinderMapperImpl.java
+ com.example.android.dessertclicker.DataBinderMapperImpl
+ com.example.android.dessertclicker.DataBinderMapperImpl$InnerBrLookup
+ com.example.android.dessertclicker.DataBinderMapperImpl$InnerLayoutIdLookup
+com/example/android/dessertclicker/databinding/ActivityMainBinding.java
+ com.example.android.dessertclicker.databinding.ActivityMainBinding
+com/example/android/dessertclicker/BuildConfig.java
+ com.example.android.dessertclicker.BuildConfig
+com/example/android/dessertclicker/BR.java
+ com.example.android.dessertclicker.BR
+androidx/databinding/DataBinderMapperImpl.java
+ androidx.databinding.DataBinderMapperImpl
+com/example/android/dessertclicker/DataBindingTriggerClass.java
+ com.example.android.dessertclicker.DataBindingTriggerClass
+androidx/databinding/library/baseAdapters/BR.java
+ androidx.databinding.library.baseAdapters.BR
+androidx/databinding/DataBindingComponent.java
+ androidx.databinding.DataBindingComponent
+com/example/android/dessertclicker/databinding/ActivityMainBindingImpl.java
+ com.example.android.dessertclicker.databinding.ActivityMainBindingImpl

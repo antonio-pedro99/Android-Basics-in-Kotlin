@@ -31,58 +31,11 @@ import com.example.wordsapp.databinding.ActivityMainBinding
  * Main Activity and entry point for the app. Displays a RecyclerView of letters.
  */
 class MainActivity : AppCompatActivity() {
-    private lateinit var recyclerView: RecyclerView
-    private var isLinearLayout = true
-
-    private fun chooseLayout() {
-        if (isLinearLayout) {
-            recyclerView.layoutManager = LinearLayoutManager(this)
-        } else {
-            recyclerView.layoutManager = GridLayoutManager(this, 4)
-        }
-        recyclerView.adapter = LetterAdapter()
-    }
-
-    private fun setIcon(menuItem: MenuItem) {
-        if (menuItem == null) return
-
-        menuItem.icon =
-            if (isLinearLayout)
-                ContextCompat.getDrawable(this, R.drawable.ic_view_list)
-            else
-                ContextCompat.getDrawable(this, R.drawable.ic_grid_view)
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        recyclerView = binding.recyclerView
-        chooseLayout()
-    }
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.layout_menu, menu)
-
-        val layoutButton = menu?.findItem(R.id.layout_switch_item)
-        // Calls code to set the icon based on the LinearLayoutManager of the RecyclerView
-        if (layoutButton != null) {
-            setIcon(layoutButton)
-        }
-
-        return true
     }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return when(item.itemId){
-            R.id.layout_switch_item -> {
-                isLinearLayout = !isLinearLayout
-                chooseLayout()
-                setIcon(item)
-                return true
-            }
-            else -> super.onOptionsItemSelected(item)
-        }
-    }
 }
