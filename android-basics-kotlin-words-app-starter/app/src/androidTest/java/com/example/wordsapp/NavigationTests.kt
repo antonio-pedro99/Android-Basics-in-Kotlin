@@ -16,6 +16,6 @@ class NavigationTests {
         val letterListScenario = launchFragmentInContainer<LetterListFragment>(themeResId =
         R.style.Theme_Words)
 
-      
+
     }
 }
